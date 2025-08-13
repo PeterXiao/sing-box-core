@@ -40,7 +40,8 @@ jobs:
       - name: Setup `Go`
         uses: actions/setup-go@v5
         with:
-          go-version: ${{ needs.go.outputs.version }}
+           go-version: 1.25
+           check-latest: true
 
       - name: Get `sing-box PuerNya` version
         id: puernya
